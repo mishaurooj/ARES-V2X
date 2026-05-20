@@ -1,0 +1,4 @@
+cd /d D:\other\Agentic-V2XShield
+conda env create -f environment.yml
+conda activate agentic-v2xshield
+python dataset_audit.py --data-dir "D:\other\Agentic-V2XShield\Dataset" --out-dir "outputs_dataset_audit"

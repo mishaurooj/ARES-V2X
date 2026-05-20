@@ -1,0 +1,16 @@
+name: agentic-v2xshield
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - tabulate
+  - pip:
+      - xgboost
+      - cryptography
+      - pydantic
