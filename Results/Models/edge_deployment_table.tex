@@ -1,0 +1,46 @@
+\begin{table*}[!t]
+\centering
+\caption{Estimated edge deployment metrics.}
+\label{tab:edge_deployment}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrr}
+\toprule
+task & setting & model & latency_ms_per_msg & estimated_memory_mb & estimated_edge_cpu_percent & cloud_offload_ratio & comm_overhead_bytes_per_msg \\
+\midrule
+binary & raw_edge_cloud & LogisticRegression & 0.0013 & 35 & 9.0130 & 0.0000 & 48 \\
+binary & raw_edge_cloud & RandomForest & 0.0030 & 180 & 10.4098 & 0.0000 & 48 \\
+binary & raw_edge_cloud & ExtraTrees & 0.0039 & 180 & 11.1220 & 0.0000 & 48 \\
+binary & raw_edge_cloud & HistGradientBoosting & 0.0061 & 140 & 12.8890 & 0.0000 & 48 \\
+binary & raw_edge_cloud & MLP & 0.0015 & 120 & 9.2158 & 0.0000 & 48 \\
+binary & raw_edge_cloud & XGBoost & 0.0017 & 220 & 9.3470 & 0.0000 & 48 \\
+binary & enhanced_temporal_trust_graph & LogisticRegression & 0.0020 & 35 & 9.5875 & 0.3500 & 96 \\
+binary & enhanced_temporal_trust_graph & RandomForest & 0.0039 & 180 & 11.0845 & 0.3500 & 96 \\
+binary & enhanced_temporal_trust_graph & ExtraTrees & 0.0044 & 180 & 11.5021 & 0.3500 & 96 \\
+binary & enhanced_temporal_trust_graph & HistGradientBoosting & 0.0050 & 140 & 11.9949 & 0.3500 & 96 \\
+binary & enhanced_temporal_trust_graph & MLP & 0.0017 & 120 & 9.3680 & 0.3500 & 96 \\
+binary & enhanced_temporal_trust_graph & XGBoost & 0.0014 & 220 & 9.1302 & 0.3500 & 96 \\
+binary & graph_neighborhood_baseline & GraphNeighborhood & 0.0019 & 180 & 9.5592 & 0.3500 & 128 \\
+binary & ARES_vote_inputs & ARES-V2X-Vote & 0.0095 & 520 & 15.6241 & 0.3500 & 128 \\
+binary & ARES_meta_fusion & ARES-MetaFusion & 0.0100 & 520 & 15.9901 & 0.3500 & 128 \\
+multiclass & raw_edge_cloud & LogisticRegression & 0.0006 & 35 & 8.4875 & 0.0000 & 48 \\
+multiclass & raw_edge_cloud & RandomForest & 0.0027 & 180 & 10.1956 & 0.0000 & 48 \\
+multiclass & raw_edge_cloud & ExtraTrees & 0.0054 & 180 & 12.2800 & 0.0000 & 48 \\
+multiclass & raw_edge_cloud & HistGradientBoosting & 0.0108 & 140 & 16.6402 & 0.0000 & 48 \\
+multiclass & raw_edge_cloud & MLP & 0.0011 & 120 & 8.8752 & 0.0000 & 48 \\
+multiclass & raw_edge_cloud & XGBoost & 0.0022 & 220 & 9.7672 & 0.0000 & 48 \\
+multiclass & enhanced_temporal_trust_graph & LogisticRegression & 0.0011 & 35 & 8.8451 & 0.3500 & 96 \\
+multiclass & enhanced_temporal_trust_graph & RandomForest & 0.0033 & 180 & 10.6299 & 0.3500 & 96 \\
+multiclass & enhanced_temporal_trust_graph & ExtraTrees & 0.0043 & 180 & 11.4682 & 0.3500 & 96 \\
+multiclass & enhanced_temporal_trust_graph & HistGradientBoosting & 0.0142 & 140 & 19.3313 & 0.3500 & 96 \\
+multiclass & enhanced_temporal_trust_graph & MLP & 0.0046 & 120 & 11.7002 & 0.3500 & 96 \\
+multiclass & enhanced_temporal_trust_graph & XGBoost & 0.0046 & 220 & 11.7189 & 0.3500 & 96 \\
+multiclass & graph_neighborhood_baseline & GraphNeighborhood & 0.0050 & 180 & 12.0048 & 0.3500 & 128 \\
+multiclass & ARES_vote_inputs & ARES-V2X-Vote & 0.0436 & 520 & 42.9107 & 0.3500 & 128 \\
+multiclass & ARES_meta_fusion & ARES-MetaFusion & 0.0448 & 520 & 43.8101 & 0.3500 & 128 \\
+multiclass & hierarchical_binary_meta_plus_attack_expert & ARES-Hierarchical-Meta & 0.0000 & 520 & 8.0000 & 0.3500 & 128 \\
+\bottomrule
+\end{tabular}
+
+}
+\end{table*}
